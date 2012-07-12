@@ -1,0 +1,280 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		221DE1DA15AF7D070075A6A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221DE1D915AF7D070075A6A5 /* UIKit.framework */; };
+		221DE1DC15AF7D070075A6A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221DE1DB15AF7D070075A6A5 /* Foundation.framework */; };
+		221DE1DE15AF7D070075A6A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221DE1DD15AF7D070075A6A5 /* CoreGraphics.framework */; };
+		221DE1E415AF7D070075A6A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 221DE1E215AF7D070075A6A5 /* InfoPlist.strings */; };
+		221DE1E615AF7D070075A6A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 221DE1E515AF7D070075A6A5 /* main.m */; };
+		221DE1EA15AF7D070075A6A5 /* LvAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 221DE1E915AF7D070075A6A5 /* LvAppDelegate.m */; };
+		221DE1ED15AF7D070075A6A5 /* LvViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 221DE1EC15AF7D070075A6A5 /* LvViewController.m */; };
+		221DE1F015AF7D070075A6A5 /* LvViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 221DE1EE15AF7D070075A6A5 /* LvViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		221DE1D515AF7D070075A6A5 /* MorseTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MorseTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		221DE1D915AF7D070075A6A5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		221DE1DB15AF7D070075A6A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		221DE1DD15AF7D070075A6A5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		221DE1E115AF7D070075A6A5 /* MorseTalk-Info.plist */ = {isa = PBXFileReference; path = "MorseTalk-Info.plist"; sourceTree = "<group>"; };
+		221DE1E315AF7D070075A6A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		221DE1E515AF7D070075A6A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		221DE1E715AF7D070075A6A5 /* MorseTalk-Prefix.pch */ = {isa = PBXFileReference; path = "MorseTalk-Prefix.pch"; sourceTree = "<group>"; };
+		221DE1E815AF7D070075A6A5 /* LvAppDelegate.h */ = {isa = PBXFileReference; path = LvAppDelegate.h; sourceTree = "<group>"; };
+		221DE1E915AF7D070075A6A5 /* LvAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LvAppDelegate.m; sourceTree = "<group>"; };
+		221DE1EB15AF7D070075A6A5 /* LvViewController.h */ = {isa = PBXFileReference; path = LvViewController.h; sourceTree = "<group>"; };
+		221DE1EC15AF7D070075A6A5 /* LvViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LvViewController.m; sourceTree = "<group>"; };
+		221DE1EF15AF7D070075A6A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LvViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		221DE1D215AF7D070075A6A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				221DE1DA15AF7D070075A6A5 /* UIKit.framework in Frameworks */,
+				221DE1DC15AF7D070075A6A5 /* Foundation.framework in Frameworks */,
+				221DE1DE15AF7D070075A6A5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		221DE1CA15AF7D070075A6A5 = {
+			isa = PBXGroup;
+			children = (
+				221DE1DF15AF7D070075A6A5 /* MorseTalk */,
+				221DE1D815AF7D070075A6A5 /* Frameworks */,
+				221DE1D615AF7D070075A6A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		221DE1D615AF7D070075A6A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				221DE1D515AF7D070075A6A5 /* MorseTalk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		221DE1D815AF7D070075A6A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				221DE1D915AF7D070075A6A5 /* UIKit.framework */,
+				221DE1DB15AF7D070075A6A5 /* Foundation.framework */,
+				221DE1DD15AF7D070075A6A5 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		221DE1DF15AF7D070075A6A5 /* MorseTalk */ = {
+			isa = PBXGroup;
+			children = (
+				221DE1E815AF7D070075A6A5 /* LvAppDelegate.h */,
+				221DE1E915AF7D070075A6A5 /* LvAppDelegate.m */,
+				221DE1EB15AF7D070075A6A5 /* LvViewController.h */,
+				221DE1EC15AF7D070075A6A5 /* LvViewController.m */,
+				221DE1EE15AF7D070075A6A5 /* LvViewController.xib */,
+				221DE1E015AF7D070075A6A5 /* Supporting Files */,
+			);
+			path = MorseTalk;
+			sourceTree = "<group>";
+		};
+		221DE1E015AF7D070075A6A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				221DE1E115AF7D070075A6A5 /* MorseTalk-Info.plist */,
+				221DE1E215AF7D070075A6A5 /* InfoPlist.strings */,
+				221DE1E515AF7D070075A6A5 /* main.m */,
+				221DE1E715AF7D070075A6A5 /* MorseTalk-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		221DE1D415AF7D070075A6A5 /* MorseTalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 221DE1F315AF7D070075A6A5 /* Build configuration list for PBXNativeTarget "MorseTalk" */;
+			buildPhases = (
+				221DE1D115AF7D070075A6A5 /* Sources */,
+				221DE1D215AF7D070075A6A5 /* Frameworks */,
+				221DE1D315AF7D070075A6A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MorseTalk;
+			productName = MorseTalk;
+			productReference = 221DE1D515AF7D070075A6A5 /* MorseTalk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		221DE1CC15AF7D070075A6A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Lv;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 221DE1CF15AF7D070075A6A5 /* Build configuration list for PBXProject "MorseTalk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 221DE1CA15AF7D070075A6A5;
+			productRefGroup = 221DE1D615AF7D070075A6A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				221DE1D415AF7D070075A6A5 /* MorseTalk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		221DE1D315AF7D070075A6A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				221DE1E415AF7D070075A6A5 /* InfoPlist.strings in Resources */,
+				221DE1F015AF7D070075A6A5 /* LvViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		221DE1D115AF7D070075A6A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				221DE1E615AF7D070075A6A5 /* main.m in Sources */,
+				221DE1EA15AF7D070075A6A5 /* LvAppDelegate.m in Sources */,
+				221DE1ED15AF7D070075A6A5 /* LvViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		221DE1E215AF7D070075A6A5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				221DE1E315AF7D070075A6A5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		221DE1EE15AF7D070075A6A5 /* LvViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				221DE1EF15AF7D070075A6A5 /* en */,
+			);
+			name = LvViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		221DE1F115AF7D070075A6A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		221DE1F215AF7D070075A6A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		221DE1F415AF7D070075A6A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MorseTalk/MorseTalk-Prefix.pch";
+				INFOPLIST_FILE = "MorseTalk/MorseTalk-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		221DE1F515AF7D070075A6A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MorseTalk/MorseTalk-Prefix.pch";
+				INFOPLIST_FILE = "MorseTalk/MorseTalk-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		221DE1CF15AF7D070075A6A5 /* Build configuration list for PBXProject "MorseTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				221DE1F115AF7D070075A6A5 /* Debug */,
+				221DE1F215AF7D070075A6A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		221DE1F315AF7D070075A6A5 /* Build configuration list for PBXNativeTarget "MorseTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				221DE1F415AF7D070075A6A5 /* Debug */,
+				221DE1F515AF7D070075A6A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 221DE1CC15AF7D070075A6A5 /* Project object */;
+}
