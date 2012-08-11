@@ -21,6 +21,8 @@
 @implementation LvViewController {
     IBOutlet UITextField *input;
     IBOutlet UITextView *output;
+    IBOutlet UIView *keyboard;
+    
     LvTranslator *translator;
     LvModulator *modulator;
     LvDemodulator *demodulator;
@@ -29,6 +31,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    keyboard.frame = CGRectMake(0, 158, 480, 162);
+    [self.view addSubview:keyboard];
+    
     translator = [[LvTranslator alloc] init];
     modulator = [[LvModulator alloc] init];
     demodulator = [[LvDemodulator alloc] init];
@@ -50,12 +55,12 @@
     [super dealloc];
 }
 
-- (IBAction)playText:(id)sender {
-    NSString *morseText = [translator textToMorse:input.text];
-    NSLog(@"%@ -> %@", input.text, morseText);
-    output.text = morseText;
-    [modulator addMorseInput:morseText];
-}
+//- (IBAction)playText:(id)sender {
+//    NSString *morseText = [translator textToMorse:input.text];
+//    NSLog(@"%@ -> %@", input.text, morseText);
+//    output.text = morseText;
+//    [modulator addMorseInput:morseText];
+//}
 
 - (void)gotMorseText:(NSString *)str {
     
@@ -68,7 +73,16 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    return (interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) || (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft) || (interfaceOrientation == UIInterfaceOrientationLandscapeRight);
+}
+
+- (IBAction)keyPressed:(UIButton *)sender {
+    NSString *key = sender.titleLabel.text;
+    output.text = [output.text stringByAppendingString:key];
+
+    NSString *morseText = [translator textToMorse:key];
+    NSLog(@"%@ -> %@", input.text, morseText);
+    [modulator addMorseInput:morseText];
 }
 
 @end

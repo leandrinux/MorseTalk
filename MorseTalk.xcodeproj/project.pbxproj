@@ -20,6 +20,12 @@
 		223C438315D6EE36004E050D /* LvTone.m in Sources */ = {isa = PBXBuildFile; fileRef = 223C438215D6EE36004E050D /* LvTone.m */; };
 		223C438515D6F7C3004E050D /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223C438415D6F7C3004E050D /* Accelerate.framework */; };
 		223C438815D6F7FD004E050D /* LvDemodulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 223C438715D6F7FD004E050D /* LvDemodulator.m */; };
+		223C438F15D70D1D004E050D /* keyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 223C438A15D70D1D004E050D /* keyboard.png */; };
+		223C439015D70D1D004E050D /* rojo-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 223C438B15D70D1D004E050D /* rojo-on.png */; };
+		223C439115D70D1D004E050D /* texture-paper.png in Resources */ = {isa = PBXBuildFile; fileRef = 223C438C15D70D1D004E050D /* texture-paper.png */; };
+		223C439215D70D1D004E050D /* top-paper.png in Resources */ = {isa = PBXBuildFile; fileRef = 223C438D15D70D1D004E050D /* top-paper.png */; };
+		223C439315D70D1D004E050D /* verde-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 223C438E15D70D1D004E050D /* verde-on.png */; };
+		223C439515D70EA6004E050D /* fondo-madera.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 223C439415D70EA6004E050D /* fondo-madera.jpg */; };
 		2244B88715D6A92A0087848E /* LvTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2244B88615D6A92A0087848E /* LvTranslator.m */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +51,12 @@
 		223C438415D6F7C3004E050D /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		223C438615D6F7FD004E050D /* LvDemodulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LvDemodulator.h; sourceTree = "<group>"; };
 		223C438715D6F7FD004E050D /* LvDemodulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LvDemodulator.m; sourceTree = "<group>"; };
+		223C438A15D70D1D004E050D /* keyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboard.png; sourceTree = "<group>"; };
+		223C438B15D70D1D004E050D /* rojo-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rojo-on.png"; sourceTree = "<group>"; };
+		223C438C15D70D1D004E050D /* texture-paper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "texture-paper.png"; sourceTree = "<group>"; };
+		223C438D15D70D1D004E050D /* top-paper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "top-paper.png"; sourceTree = "<group>"; };
+		223C438E15D70D1D004E050D /* verde-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "verde-on.png"; sourceTree = "<group>"; };
+		223C439415D70EA6004E050D /* fondo-madera.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fondo-madera.jpg"; sourceTree = "<group>"; };
 		2244B88515D6A92A0087848E /* LvTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LvTranslator.h; sourceTree = "<group>"; };
 		2244B88615D6A92A0087848E /* LvTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LvTranslator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +109,7 @@
 		221DE1DF15AF7D070075A6A5 /* MorseTalk */ = {
 			isa = PBXGroup;
 			children = (
+				223C438915D70D00004E050D /* Resources */,
 				221DE1E815AF7D070075A6A5 /* LvAppDelegate.h */,
 				221DE1E915AF7D070075A6A5 /* LvAppDelegate.m */,
 				221DE1EB15AF7D070075A6A5 /* LvViewController.h */,
@@ -124,6 +137,19 @@
 				221DE1E715AF7D070075A6A5 /* MorseTalk-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		223C438915D70D00004E050D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				223C438A15D70D1D004E050D /* keyboard.png */,
+				223C439415D70EA6004E050D /* fondo-madera.jpg */,
+				223C438B15D70D1D004E050D /* rojo-on.png */,
+				223C438C15D70D1D004E050D /* texture-paper.png */,
+				223C438D15D70D1D004E050D /* top-paper.png */,
+				223C438E15D70D1D004E050D /* verde-on.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +205,12 @@
 			files = (
 				221DE1E415AF7D070075A6A5 /* InfoPlist.strings in Resources */,
 				221DE1F015AF7D070075A6A5 /* LvViewController.xib in Resources */,
+				223C438F15D70D1D004E050D /* keyboard.png in Resources */,
+				223C439015D70D1D004E050D /* rojo-on.png in Resources */,
+				223C439115D70D1D004E050D /* texture-paper.png in Resources */,
+				223C439215D70D1D004E050D /* top-paper.png in Resources */,
+				223C439315D70D1D004E050D /* verde-on.png in Resources */,
+				223C439515D70EA6004E050D /* fondo-madera.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

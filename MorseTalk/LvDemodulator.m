@@ -32,8 +32,8 @@
 - (void)tick:(NSTimer *)sender {
     
     NSLog(@"Demodulator tick");
-    if ([delegate respondsToSelector:@selector(gotMorseText:)])
-        [delegate gotMorseText:@".-"];
+//    if ([delegate respondsToSelector:@selector(gotMorseText:)])
+//        [delegate gotMorseText:@".-"];
     
 }
 
