@@ -45,12 +45,10 @@
 }
 
 - (IBAction)playText:(id)sender {
-//    NSString *morseText = [translator textToMorse:input.text];
-//    NSLog(@"%@ -> %@", input.text, morseText);
-//    output.text = morseText;
-//    [modulator addMorseInput:morseText];
-    
-    [modulator toggleSound];
+    NSString *morseText = [translator textToMorse:input.text];
+    NSLog(@"%@ -> %@", input.text, morseText);
+    output.text = morseText;
+    [modulator addMorseInput:morseText];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

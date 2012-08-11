@@ -12,5 +12,4 @@
 
 - (void)addMorseInput:(NSString *)input;
 
-- (void)toggleSound;
 @end
