@@ -23,6 +23,7 @@
     IBOutlet UITextView *output;
     LvTranslator *translator;
     LvModulator *modulator;
+    LvDemodulator *demodulator;
 }
 
 - (void)viewDidLoad
@@ -30,6 +31,9 @@
     [super viewDidLoad];
     translator = [[LvTranslator alloc] init];
     modulator = [[LvModulator alloc] init];
+    demodulator = [[LvDemodulator alloc] init];
+    demodulator.delegate = self;
+    [demodulator start];
 }
 
 - (void)viewDidUnload
@@ -39,8 +43,10 @@
 }
 
 - (void)dealloc {
-    [translator release];
+    [demodulator stop];
+    [demodulator release];
     [modulator release];
+    [translator release];
     [super dealloc];
 }
 
@@ -49,6 +55,15 @@
     NSLog(@"%@ -> %@", input.text, morseText);
     output.text = morseText;
     [modulator addMorseInput:morseText];
+}
+
+- (void)gotMorseText:(NSString *)str {
+    
+    NSString *ch = ([str isEqualToString:@" "])
+        ? @" "
+        : [translator morseToText:str];
+    
+    output.text = [output.text stringByAppendingString:ch];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

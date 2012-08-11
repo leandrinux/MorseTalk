@@ -18,6 +18,8 @@
 		223C437D15D6DD24004E050D /* LvModulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 223C437C15D6DD24004E050D /* LvModulator.m */; };
 		223C438015D6E620004E050D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223C437F15D6E620004E050D /* AudioToolbox.framework */; };
 		223C438315D6EE36004E050D /* LvTone.m in Sources */ = {isa = PBXBuildFile; fileRef = 223C438215D6EE36004E050D /* LvTone.m */; };
+		223C438515D6F7C3004E050D /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223C438415D6F7C3004E050D /* Accelerate.framework */; };
+		223C438815D6F7FD004E050D /* LvDemodulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 223C438715D6F7FD004E050D /* LvDemodulator.m */; };
 		2244B88715D6A92A0087848E /* LvTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2244B88615D6A92A0087848E /* LvTranslator.m */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +42,9 @@
 		223C437F15D6E620004E050D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		223C438115D6EE36004E050D /* LvTone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LvTone.h; sourceTree = "<group>"; };
 		223C438215D6EE36004E050D /* LvTone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LvTone.m; sourceTree = "<group>"; };
+		223C438415D6F7C3004E050D /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		223C438615D6F7FD004E050D /* LvDemodulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LvDemodulator.h; sourceTree = "<group>"; };
+		223C438715D6F7FD004E050D /* LvDemodulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LvDemodulator.m; sourceTree = "<group>"; };
 		2244B88515D6A92A0087848E /* LvTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LvTranslator.h; sourceTree = "<group>"; };
 		2244B88615D6A92A0087848E /* LvTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LvTranslator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -49,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				223C438515D6F7C3004E050D /* Accelerate.framework in Frameworks */,
 				223C438015D6E620004E050D /* AudioToolbox.framework in Frameworks */,
 				221DE1DA15AF7D070075A6A5 /* UIKit.framework in Frameworks */,
 				221DE1DC15AF7D070075A6A5 /* Foundation.framework in Frameworks */,
@@ -79,6 +85,7 @@
 		221DE1D815AF7D070075A6A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				223C438415D6F7C3004E050D /* Accelerate.framework */,
 				223C437F15D6E620004E050D /* AudioToolbox.framework */,
 				221DE1D915AF7D070075A6A5 /* UIKit.framework */,
 				221DE1DB15AF7D070075A6A5 /* Foundation.framework */,
@@ -102,6 +109,8 @@
 				223C437C15D6DD24004E050D /* LvModulator.m */,
 				223C438115D6EE36004E050D /* LvTone.h */,
 				223C438215D6EE36004E050D /* LvTone.m */,
+				223C438615D6F7FD004E050D /* LvDemodulator.h */,
+				223C438715D6F7FD004E050D /* LvDemodulator.m */,
 			);
 			path = MorseTalk;
 			sourceTree = "<group>";
@@ -186,6 +195,7 @@
 				2244B88715D6A92A0087848E /* LvTranslator.m in Sources */,
 				223C437D15D6DD24004E050D /* LvModulator.m in Sources */,
 				223C438315D6EE36004E050D /* LvTone.m in Sources */,
+				223C438815D6F7FD004E050D /* LvDemodulator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

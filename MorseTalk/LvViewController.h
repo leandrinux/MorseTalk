@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LvDemodulator.h"
 
-@interface LvViewController : UIViewController
+@interface LvViewController : UIViewController <LvDemodulatorDelegate>
 
 @end

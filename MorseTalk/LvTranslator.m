@@ -10,6 +10,7 @@
 
 @implementation LvTranslator {
     NSDictionary *mtt;
+    NSDictionary *ttm;
 }
 
 - (id)initWithFrame:(CGRect)frame
@@ -27,6 +28,17 @@
                                                    @"K",@"L",@"M",@"N",@"O",@"P",@"Q",@"R",@"S",@"T",
                                                    @"U",@"V",@"W",@"X",@"Y",@"Z",@"1",@"2",@"3",@"4",
                                                    @"5",@"6",@"7",@"8",@"9",@"0",@" ", nil]] retain];
+
+        ttm = [[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:
+                                                    @"A",@"B",@"C",@"D",@"E",@"F",@"G",@"H",@"I",@"J",
+                                                    @"K",@"L",@"M",@"N",@"O",@"P",@"Q",@"R",@"S",@"T",
+                                                    @"U",@"V",@"W",@"X",@"Y",@"Z",@"1",@"2",@"3",@"4",
+                                                    @"5",@"6",@"7",@"8",@"9",@"0",@" ", nil]
+                                           forKeys:[NSArray arrayWithObjects:
+                                                    @".-",@"-...",@"-.-.",@"-..",@".",@"..-.",@"--.",@"....",@"..",@".---",
+                                                    @"-.-",@".-..",@"--",@"-.",@"---",@".--.",@"--.-",@".-.",@"...",@"-",
+                                                    @"..-",@"...-",@".--",@"-..-",@"-.--",@"--..",@".----",@"..---",@"...--",@"....-",
+                                                    @".....",@"-....",@"--...",@"---..",@"----.",@"-----",@"/", nil]] retain];
     }
     return self;
 }
@@ -37,7 +49,16 @@
 }
 
 - (NSString *)morseToText:(NSString *)morseText {
-    return @"";
+    NSMutableString *output = [[[NSMutableString alloc] init] autorelease];
+    NSArray *morseChars = [morseText componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@" /"]];
+    for (NSString *morseChar in morseChars) {
+        NSString *ch = [ttm objectForKey:morseChar];
+        if (ch)
+            [output appendString:ch];
+        else
+            NSLog(@"Unknown morse char: %@", morseChar);
+    }
+    return output;
 }
 
 - (NSString *)textToMorse:(NSString *)plainText {
