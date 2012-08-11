@@ -15,6 +15,10 @@
 		221DE1EA15AF7D070075A6A5 /* LvAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 221DE1E915AF7D070075A6A5 /* LvAppDelegate.m */; };
 		221DE1ED15AF7D070075A6A5 /* LvViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 221DE1EC15AF7D070075A6A5 /* LvViewController.m */; };
 		221DE1F015AF7D070075A6A5 /* LvViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 221DE1EE15AF7D070075A6A5 /* LvViewController.xib */; };
+		223C437D15D6DD24004E050D /* LvModulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 223C437C15D6DD24004E050D /* LvModulator.m */; };
+		223C438015D6E620004E050D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223C437F15D6E620004E050D /* AudioToolbox.framework */; };
+		223C438315D6EE36004E050D /* LvTone.m in Sources */ = {isa = PBXBuildFile; fileRef = 223C438215D6EE36004E050D /* LvTone.m */; };
+		2244B88715D6A92A0087848E /* LvTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2244B88615D6A92A0087848E /* LvTranslator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +26,22 @@
 		221DE1D915AF7D070075A6A5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		221DE1DB15AF7D070075A6A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		221DE1DD15AF7D070075A6A5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		221DE1E115AF7D070075A6A5 /* MorseTalk-Info.plist */ = {isa = PBXFileReference; path = "MorseTalk-Info.plist"; sourceTree = "<group>"; };
+		221DE1E115AF7D070075A6A5 /* MorseTalk-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MorseTalk-Info.plist"; sourceTree = "<group>"; };
 		221DE1E315AF7D070075A6A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		221DE1E515AF7D070075A6A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		221DE1E715AF7D070075A6A5 /* MorseTalk-Prefix.pch */ = {isa = PBXFileReference; path = "MorseTalk-Prefix.pch"; sourceTree = "<group>"; };
-		221DE1E815AF7D070075A6A5 /* LvAppDelegate.h */ = {isa = PBXFileReference; path = LvAppDelegate.h; sourceTree = "<group>"; };
+		221DE1E715AF7D070075A6A5 /* MorseTalk-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MorseTalk-Prefix.pch"; sourceTree = "<group>"; };
+		221DE1E815AF7D070075A6A5 /* LvAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LvAppDelegate.h; sourceTree = "<group>"; };
 		221DE1E915AF7D070075A6A5 /* LvAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LvAppDelegate.m; sourceTree = "<group>"; };
-		221DE1EB15AF7D070075A6A5 /* LvViewController.h */ = {isa = PBXFileReference; path = LvViewController.h; sourceTree = "<group>"; };
+		221DE1EB15AF7D070075A6A5 /* LvViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LvViewController.h; sourceTree = "<group>"; };
 		221DE1EC15AF7D070075A6A5 /* LvViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LvViewController.m; sourceTree = "<group>"; };
 		221DE1EF15AF7D070075A6A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LvViewController.xib; sourceTree = "<group>"; };
+		223C437B15D6DD24004E050D /* LvModulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LvModulator.h; sourceTree = "<group>"; };
+		223C437C15D6DD24004E050D /* LvModulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LvModulator.m; sourceTree = "<group>"; };
+		223C437F15D6E620004E050D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		223C438115D6EE36004E050D /* LvTone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LvTone.h; sourceTree = "<group>"; };
+		223C438215D6EE36004E050D /* LvTone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LvTone.m; sourceTree = "<group>"; };
+		2244B88515D6A92A0087848E /* LvTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LvTranslator.h; sourceTree = "<group>"; };
+		2244B88615D6A92A0087848E /* LvTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LvTranslator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				223C438015D6E620004E050D /* AudioToolbox.framework in Frameworks */,
 				221DE1DA15AF7D070075A6A5 /* UIKit.framework in Frameworks */,
 				221DE1DC15AF7D070075A6A5 /* Foundation.framework in Frameworks */,
 				221DE1DE15AF7D070075A6A5 /* CoreGraphics.framework in Frameworks */,
@@ -67,6 +79,7 @@
 		221DE1D815AF7D070075A6A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				223C437F15D6E620004E050D /* AudioToolbox.framework */,
 				221DE1D915AF7D070075A6A5 /* UIKit.framework */,
 				221DE1DB15AF7D070075A6A5 /* Foundation.framework */,
 				221DE1DD15AF7D070075A6A5 /* CoreGraphics.framework */,
@@ -83,6 +96,12 @@
 				221DE1EC15AF7D070075A6A5 /* LvViewController.m */,
 				221DE1EE15AF7D070075A6A5 /* LvViewController.xib */,
 				221DE1E015AF7D070075A6A5 /* Supporting Files */,
+				2244B88515D6A92A0087848E /* LvTranslator.h */,
+				2244B88615D6A92A0087848E /* LvTranslator.m */,
+				223C437B15D6DD24004E050D /* LvModulator.h */,
+				223C437C15D6DD24004E050D /* LvModulator.m */,
+				223C438115D6EE36004E050D /* LvTone.h */,
+				223C438215D6EE36004E050D /* LvTone.m */,
 			);
 			path = MorseTalk;
 			sourceTree = "<group>";
@@ -164,6 +183,9 @@
 				221DE1E615AF7D070075A6A5 /* main.m in Sources */,
 				221DE1EA15AF7D070075A6A5 /* LvAppDelegate.m in Sources */,
 				221DE1ED15AF7D070075A6A5 /* LvViewController.m in Sources */,
+				2244B88715D6A92A0087848E /* LvTranslator.m in Sources */,
+				223C437D15D6DD24004E050D /* LvModulator.m in Sources */,
+				223C438315D6EE36004E050D /* LvTone.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +295,7 @@
 				221DE1F515AF7D070075A6A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
