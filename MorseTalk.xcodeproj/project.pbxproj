@@ -26,6 +26,9 @@
 		223C439215D70D1D004E050D /* top-paper.png in Resources */ = {isa = PBXBuildFile; fileRef = 223C438D15D70D1D004E050D /* top-paper.png */; };
 		223C439315D70D1D004E050D /* verde-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 223C438E15D70D1D004E050D /* verde-on.png */; };
 		223C439515D70EA6004E050D /* fondo-madera.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 223C439415D70EA6004E050D /* fondo-madera.jpg */; };
+		223C43AB15D71950004E050D /* LvToneDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 223C43AA15D71950004E050D /* LvToneDetector.m */; };
+		223C43AD15D722DF004E050D /* SpecialElite.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 223C43AC15D71E88004E050D /* SpecialElite.ttf */; };
+		223C43AF15D7234C004E050D /* carriage.png in Resources */ = {isa = PBXBuildFile; fileRef = 223C43AE15D7234C004E050D /* carriage.png */; };
 		2244B88715D6A92A0087848E /* LvTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2244B88615D6A92A0087848E /* LvTranslator.m */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +60,10 @@
 		223C438D15D70D1D004E050D /* top-paper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "top-paper.png"; sourceTree = "<group>"; };
 		223C438E15D70D1D004E050D /* verde-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "verde-on.png"; sourceTree = "<group>"; };
 		223C439415D70EA6004E050D /* fondo-madera.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fondo-madera.jpg"; sourceTree = "<group>"; };
+		223C43A915D7194F004E050D /* LvToneDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LvToneDetector.h; sourceTree = "<group>"; };
+		223C43AA15D71950004E050D /* LvToneDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LvToneDetector.m; sourceTree = "<group>"; };
+		223C43AC15D71E88004E050D /* SpecialElite.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SpecialElite.ttf; sourceTree = "<group>"; };
+		223C43AE15D7234C004E050D /* carriage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carriage.png; sourceTree = "<group>"; };
 		2244B88515D6A92A0087848E /* LvTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LvTranslator.h; sourceTree = "<group>"; };
 		2244B88615D6A92A0087848E /* LvTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LvTranslator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,6 +131,8 @@
 				223C438215D6EE36004E050D /* LvTone.m */,
 				223C438615D6F7FD004E050D /* LvDemodulator.h */,
 				223C438715D6F7FD004E050D /* LvDemodulator.m */,
+				223C43A915D7194F004E050D /* LvToneDetector.h */,
+				223C43AA15D71950004E050D /* LvToneDetector.m */,
 			);
 			path = MorseTalk;
 			sourceTree = "<group>";
@@ -142,6 +151,8 @@
 		223C438915D70D00004E050D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				223C43AE15D7234C004E050D /* carriage.png */,
+				223C43AC15D71E88004E050D /* SpecialElite.ttf */,
 				223C438A15D70D1D004E050D /* keyboard.png */,
 				223C439415D70EA6004E050D /* fondo-madera.jpg */,
 				223C438B15D70D1D004E050D /* rojo-on.png */,
@@ -211,6 +222,8 @@
 				223C439215D70D1D004E050D /* top-paper.png in Resources */,
 				223C439315D70D1D004E050D /* verde-on.png in Resources */,
 				223C439515D70EA6004E050D /* fondo-madera.jpg in Resources */,
+				223C43AD15D722DF004E050D /* SpecialElite.ttf in Resources */,
+				223C43AF15D7234C004E050D /* carriage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +241,7 @@
 				223C437D15D6DD24004E050D /* LvModulator.m in Sources */,
 				223C438315D6EE36004E050D /* LvTone.m in Sources */,
 				223C438815D6F7FD004E050D /* LvDemodulator.m in Sources */,
+				223C43AB15D71950004E050D /* LvToneDetector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +286,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -289,7 +303,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

@@ -56,7 +56,7 @@ OSStatus RenderTone(
 - (id)init {
     if (self = [super init]) {
         sampleRate = 44100;
-        frequency = 2400;
+        frequency = 2500;
     }
     return self;
 }

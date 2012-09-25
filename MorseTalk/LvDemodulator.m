@@ -7,16 +7,26 @@
 //
 
 #import "LvDemodulator.h"
+#import "LvToneDetector.h"
 
 #define interval 1.0f
 
 @implementation LvDemodulator {
     NSTimer *timer;
+    LvToneDetector *detector;
 }
 
 @synthesize delegate;
 
+- (id)init {
+    if (self = [super init]) {
+        detector = [[LvToneDetector alloc] init];
+    }
+    return self;
+}
+
 - (void)dealloc {
+    [detector release];
     [timer invalidate];
     [super dealloc];
 }
@@ -31,7 +41,7 @@
 
 - (void)tick:(NSTimer *)sender {
     
-    NSLog(@"Demodulator tick");
+//    NSLog(@"Demodulator tick");
 //    if ([delegate respondsToSelector:@selector(gotMorseText:)])
 //        [delegate gotMorseText:@".-"];
     

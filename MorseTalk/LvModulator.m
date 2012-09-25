@@ -9,7 +9,7 @@
 #import "LvModulator.h"
 #import "LvTone.h"
 
-#define t_dot .2f
+#define t_dot .1f
 #define t_dash (3*t_dot)
 #define t_bar (7*t_dot)
 

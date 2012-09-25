@@ -25,10 +25,19 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    
+//    for(NSString* family in [UIFont familyNames]) {
+//        NSLog(@"%@", family);
+//        for(NSString* name in [UIFont fontNamesForFamilyName: family]) {
+//            NSLog(@"  %@", name);
+//        }
+//    }
+
     // Override point for customization after application launch.
     self.viewController = [[[LvViewController alloc] initWithNibName:@"LvViewController" bundle:nil] autorelease];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
